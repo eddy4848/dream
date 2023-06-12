@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dream Bigger | Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="assets/Group 1.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="main">
+        <nav class="nav" id="navbar">
+            <input type="checkbox" id="check" name="">
+            <label for="check" class="checkbtn">
+                <i class='fa-3x bx bx-menu bx-flip-vertical' style='color:rgba(0,0,0,0.91)'  ></i>
+                
+            </label>
+            <ul>
+                <li><a class="btn active" href="#">Features</a></li>
+                <li><a class="btn" href="#">How to use</a></li>
+                <li><a class="btn" href="#">Licenses</a></li>
+                <li><a class="btn" href="#">Pricing</a></li>
+            </ul>
+            <img src="assets/Group 1.png" alt="" class="logo">
+            <button type="button" class="button">Get started</button>
+        </nav>
+        <section class="home-section">
+            <div class="home-con">
+                <div class="home-img">
+                    <div class="text-con">
+                        <h1>Dream bigger</h1><br>
+                        <h4>Start your free trial today, No credit card needed</h4>
+                        <button class="butt" type="button">Join the waiting list</button>
+                        <div class="newsletter">
+                            <input type="text" placeholder="A minimalist mockup template">
+                            <button class="gen-butt">Generate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   <!-- ----js scripts---- -->
+<script>
+    var navConatainer = document.getElementById("navbar");
+    var navs = navConatainer.getElementsByClassName("btn");
+
+    for(var i =0; i < navs.length; i++) {
+        navs[i].addEventListener('click', function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+    }
+</script>
+</body>
+</html>

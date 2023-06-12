@@ -1,0 +1,503 @@
+@font-face {
+	font-family: Algerian Font;
+	src: url(fonts/Algerian\ Font.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	background: #ffffff;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.493);
+}
+.logo
+{
+	width: 50px;
+	height: 44.23px;
+	margin-left: -280px;
+}
+nav ul{
+	float: left;
+	margin-left: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+	padding: 7px 10px;
+	text-transform: uppercase;
+}
+.button
+{
+	margin-right: 30px;
+	padding: 7px 18px;
+	font-weight: 200;
+	font-size: 15px;
+	color: #0c0f12;
+	background: #ffffff;
+	border: 1px solid #0c0f12;
+	border-radius: 40px;
+	cursor: pointer;
+}
+.call-btn
+{
+	display: none;
+}
+nav ul li i{
+	font-size: 50px;
+	background-color: #a7560c;
+	padding-bottom: 10px;
+}
+.bx{
+	font-size: 50px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+a:hover{
+	color: #f2b353;
+	transition: .5s;
+	font-size: 18px;
+}
+a.active
+{
+	color: #a7560c;
+	font-size: 18px;
+}
+.checkbtn{
+	color: white;
+	margin-top: 22px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+	
+}
+#check{
+	display: none;
+}
+.home-img
+{
+	background-image: url(assets/IMG-20230531-WA0098.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+.home-img .text-con h1
+{
+	color: #0c0f12;
+	font-size: 70px;
+	margin-top: 80px;
+	font-family: 'Noto Sans Chorasmian', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+.home-img .text-con h4
+{
+	color: #0c0f12;
+	font-size: 18px;
+	margin-top: -10px;
+	margin-left: 20px;
+	font-family: 'Noto Sans Chorasmian', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+.butt
+{
+	padding: 10px 25px;
+	background-color: #53af34;
+	border: none;
+	margin-top: 20px;
+	margin-left: 150px;
+	color: white;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.newsletter
+{
+	width: 500px;
+	height: 50px;
+	border-radius: 10px;
+	margin-top: 260px;
+	background: #ffffff;
+	display: flex;
+	background: rgba(255, 255, 255, 0.753);
+	padding: 3px 3px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(.3px);
+	-webkit-backdrop-filter: blur(.3px);
+	border: none;
+}
+input
+{
+	width: 80%;
+	margin-left: 30px;
+/* From https://css.glass */
+background: transparent;
+border: none;
+padding: 0 10px;
+color: black;
+font-size: 14px;
+}
+input:focus
+{
+	border: none;
+	outline: none;
+}
+.main
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.home-section
+{
+	width: 96%;
+	margin-top: 60px;
+}
+.text-con
+{
+	display: block;
+	color: white;
+}
+.text-con h2
+{
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: Algerian Font;
+}
+.mobile
+{
+	display: none;
+}
+.gen-butt
+{
+	width: 100px;
+	border-radius: 10px;
+	background: rgba(24, 22, 22, 0.616);
+	border: none;
+	color: white;
+}
+/* --------responsiveness between laptop and tablet------- */
+@media(max-width: 946px){
+	.logo
+	{
+		width: 50px;
+		height: 44.23px;
+		margin: 0;
+	}
+	nav{
+		background: #ffffff;
+		height: 60px;
+		width: 100%;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		top: 0;
+		left: 0;
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.493);
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	.imgs
+	{
+		display: none;
+	}
+	.newsletter
+	{
+		width: 100%;
+		height: 50px;
+		border-radius: 10px;
+		margin-top: 100px;
+		background: #ffffff;
+		display: flex;
+		background: rgba(255, 255, 255, 0.753);
+		padding: 3px 3px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(.3px);
+		-webkit-backdrop-filter: blur(.3px);
+		border: none;
+	}
+	input
+	{
+		width: 80%;
+		margin-left: 30px;
+	/* From https://css.glass */
+	background: transparent;
+	border: none;
+	padding: 0 10px;
+	color: black;
+	font-size: 14px;
+	}
+	input:focus
+	{
+		border: none;
+		outline: none;
+	}
+}
+/* --------responsiveness between laptop and tablet------- */
+@media(max-width:  858px){
+	.checkbtn{
+		display: block;
+	}
+	.mobile
+	{
+		display: none;
+	}
+	label.logo{
+		font-size: 30px;
+		padding-left: 40px;
+	}
+	.call-btn
+	{
+		display: flex;
+		position: absolute;
+		top: 25px;
+		font-size: 30px;
+		left: 40px;
+	}
+	 nav ul{
+		position: fixed;
+		margin-left: 0;
+		width: 100%;
+		height: 100vh;	
+		background: #ffffff;
+		top: 60px;
+		left: -1000px;
+		z-index: 2;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover{
+		background: none;
+		color: #f2b353;
+	}
+	a:active{
+		background: none;
+		color: #a7560c;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.newsletter
+	{
+		width: 350px;
+		height: 50px;
+		border-radius: 10px;
+		margin-top: 200px;
+		margin-left: 10px;
+		background: #ffffff;
+		display: flex;
+		background: rgba(255, 255, 255, 0.753);
+		padding: 3px 3px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(.3px);
+		-webkit-backdrop-filter: blur(.3px);
+		border: none;
+	}
+	input
+	{
+		width: 80%;
+		margin-left: 30px;
+	/* From https://css.glass */
+	background: transparent;
+	border: none;
+	padding: 0 10px;
+	color: black;
+	font-size: 14px;
+	}
+	input:focus
+	{
+		border: none;
+		outline: none;
+	}
+	.home-img .text-con h1
+	{
+		color: #0c0f12;
+		font-size: 50px;
+		margin-top: 80px;
+		margin-left: 30px;
+		font-family: 'Noto Sans Chorasmian', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	}
+	.home-img .text-con h4
+	{
+		color: #0c0f12;
+		font-size: 15px;
+		margin-top: -10px;
+		margin-left: 20px;
+		font-family: 'Noto Sans Chorasmian', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	}
+	.butt
+	{
+		padding: 10px 25px;
+		background-color: #53af34;
+		border: none;
+		margin-top: 20px;
+		margin-left: 120px;
+		color: white;
+		cursor: pointer;
+		border-radius: 30px;
+	}
+}
+/* --------responsiveness tablet------- */
+@media(max-width: 767px){
+	label.logo{
+		font-size: 25px;
+		padding-left: 40px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+/* --------responsiveness large phones------- */
+@media(max-width: 426px){
+	label.logo{
+		font-size: 20px;
+		padding-left: 40px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	.imgs
+	{
+		display: flex;
+	}
+	section img{
+		width: 100%;
+		height: 100vh;
+	}
+	.hehe
+	{
+		width: 100%;
+		height: 100vh;
+		background: #0c0f12;
+	}
+}
+/* --------responsiveness medium phones------- */
+@media(max-width: 376px){
+	label.logo{
+		font-size: 16px;
+		padding-left: 40px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	nav ul
+	{
+		z-index: 20;
+	}
+	.imgs
+	{
+		display: none;
+	}
+	.home-img .text-con h1
+	{
+		color: #0c0f12;
+		font-size: 45px;
+		margin-top: 80px;
+		font-family: 'Noto Sans Chorasmian', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	}
+	.home-img .text-con h4
+	{
+		color: #0c0f12;
+		font-size: 11px;
+		margin-top: -10px;
+		margin-left: 50px;
+		font-family: 'Noto Sans Chorasmian', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	}
+	.butt
+	{
+		padding: 10px 25px;
+		background-color: #53af34;
+		border: none;
+		margin-top: 20px;
+		margin-left: 100px;
+		color: white;
+		cursor: pointer;
+		border-radius: 30px;
+	}
+	
+	.newsletter
+	{
+		width: 300px;
+		height: 50px;
+		border-radius: 10px;
+		margin-top: 200px;
+		margin-left: 10px;
+		background: #ffffff;
+		display: flex;
+		background: rgba(255, 255, 255, 0.753);
+		padding: 3px 3px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(.3px);
+		-webkit-backdrop-filter: blur(.3px);
+		border: none;
+	}
+	input
+	{
+		width: 80%;
+		margin-left: 30px;
+	background: transparent;
+	border: none;
+	padding: 0 10px;
+	color: black;
+	font-size: 14px;
+	}
+	input:focus
+	{
+		border: none;
+		outline: none;
+	}
+}
+/* --------responsiveness small phones------- */
+@media(max-width: 321px){
+	label.logo{
+		font-size: 13px;
+		padding-left: 40px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	.imgs
+	{
+		display: none;
+	}
+}
